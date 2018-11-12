@@ -1,60 +1,53 @@
 html {
   background-color: #eee9de;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
 header {
   text-align: left;
 }
 
 div {
   display: inline-block;
+  text-align: left;
+  padding: 1em;
+  max-width: 25em;
+  vertical-align: middle;
+}
+
+section {
+  text-align: center;
+  padding: 2em 0;
 }
 
 h2 {
-  margin-top: 2em;
+  margin-top: 0;
 }
 
 img {
-  margin-top: 2.5em;
-  width: 90%;
-  height: auto;
-  max-width: 400px;
-  float:left;
-  margin-right: 1.2em;
+  display: block;
+  width: 100%;
 }
 
-div a {
-  border: 2px solid black;
+.btn {
+  border: 2px solid #333;
   border-radius: 6px;
   font-size: 1.2em;
-  padding: .5em .5em;
   text-decoration: none;
-  padding: .6em .5em;
-}
-
-div a:hover {
-  background-color:  #666;
-}
-
-div p {
-  font-size: 1em;
-  max-width: 400px;
-  margin-bottom: 2em;
-}
-
-
-}
-/*
-  text-align: center;
+  padding: .5em;
   display: inline-block;
-  borderbox
-  Margins: 1.5rem
-  max-width: 25em
-  Paddings 0.1em 0.2em 0.4em .75em
-  text-decoration: none;
-  color: #000000
-  Paddings 0.1em 0.2em 0.4em .75em
-*/
+}
 
-
+.btn:hover {
+  background-color: #666;
 }
